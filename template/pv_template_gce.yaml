@@ -1,0 +1,15 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pv%vol_nm%
+  labels:
+    type: gke
+spec:
+  capacity:
+    storage: %vol_size%
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+   pdName: %vol_nm%
+   fsType: %fs_type%
+---------------
