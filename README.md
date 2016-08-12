@@ -12,4 +12,4 @@ To create Cassandra petset clusters
 To create scylla petset clusters  
 
 <https://github.com/jooyeong/kubernetes_petset/blob/master/yaml/scylla/REAME.md>
-# k8s_petset
+
