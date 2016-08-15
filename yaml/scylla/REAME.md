@@ -1,4 +1,3 @@
-
 # Scylla
 
 To create scylla petset clusters
@@ -112,9 +111,9 @@ So when the first pod is dead, it can be occured the problem
 
  Generally pvc_nm is volumeClaimTemplates's name and cluster name 
 
-	Syntax> ./pvc_generator.sh pvc_nm vol_count vol_size "
+	Syntax> ./pvc_generator.sh cloud_type pvc_nm vol_count vol_size "
 	$ ./pvc_generator.sh
-	$ ./pvc_generator.sh scylla-data-scylla 3 50"
+	$ ./pvc_generator.sh gce scylla-data-scylla 3 50"
 
  After checking the yaml file, you can create Persistent Volume Claim
 
