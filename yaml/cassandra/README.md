@@ -95,9 +95,9 @@
 
  Generally pvc_nm is volumeClaimTemplates's name and cluster name 
 
- 	Syntax> ./pvc_generator.sh pvc_nm vol_count vol_size "
+ 	Syntax> ./pvc_generator.sh cloud_type pvc_nm vol_count vol_size "
  	$ ./pvc_generator.sh
- 	$ ./pvc_generator.sh cassandra-data-cassandra 3 50"
+ 	$ ./pvc_generator.sh gce cassandra-data-cassandra 3 50"
 
  After checking the yaml file, you can create Persistent Volume.
 
