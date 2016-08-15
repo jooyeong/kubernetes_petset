@@ -101,7 +101,7 @@ else
       vol_nm+=$vol_prefix"-"$i" "
       echo $vol_prefix"-"$i >> disk_$dt.log
     
-      sed -e "s;%vol_nm%;$vol_prefix"-"$i;g" -e "s;%vol_size%;$3'GBi';g" -e "s;%fs_type%;$6;g" template/pv_template_gce.yaml >> yaml/pv_result_gce_$dt.yaml
+      sed -e "s;%vol_nm%;$vol_prefix"-"$i;g" -e "s;%vol_size%;$3Gi;g" -e "s;%fs_type%;$6;g" template/pv_template_gce.yaml >> yaml/pv_result_gce_$dt.yaml
     done
 
     gcloud compute disks create  $vol_nm --size $3 --type $4 --zone $5   
