@@ -7,5 +7,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: %vol_size%"Gi"
+      storage: %vol_size%Gi
 ------------------
