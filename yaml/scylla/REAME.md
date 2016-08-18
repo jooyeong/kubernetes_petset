@@ -100,8 +100,8 @@ So when the first pod is dead, it can be occured the problem
 
 	Syntax> ./create_volume.sh cloudtype volume_count volume_size volume_type volume_zone fs_type prefix"
 	$ ./create_volume.sh
-	$ ./create_volume.sh gce 3 50 pd-ssd us-central1-b ext4 test
-	$ ./create_volume.sh aws 3 50 gp2 us-west-2a ext4  
+	$ ./create_volume.sh gce 3 50 pd-ssd us-central1-b xfs test
+	$ ./create_volume.sh aws 3 50 gp2 us-west-2a xfs  
 	
  After checking the yaml file, you can create Persistent Volume
 
