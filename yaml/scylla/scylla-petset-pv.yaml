@@ -71,7 +71,7 @@ spec:
         # the pet volumes.
         volumeMounts:
         - name: scylla-data
-          mountPath: /scylla-data
+          mountPath: /var/lib/scylla
   # These are converted to volume claims by the controller
   # and mounted at the paths mentioned above.  Storage can be automatically
   # created for the Pets depending on the cloud environment.
